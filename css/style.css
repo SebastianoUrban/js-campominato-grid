@@ -2,6 +2,7 @@
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+    margin: 30px auto;
 }
 
 
@@ -9,4 +10,9 @@
     width: 10%;
     height: 10%;
     border: 2px solid black;
+    background-color: aquamarine;
+}
+
+.clicked {
+    background-color: pink;
 }
