@@ -3,17 +3,23 @@
 const gridElem = document.getElementById('grid');
 const playBtn = document.getElementById('play');
 
+
+// fanction for creation div.square with inside p
 function createSquareElem (index) {
-    const elem = document.createElement('div');
-    elem.classList.add('square');
-    elem.innerText = index+1;
+
+    const pElem = document.createElement('p');
+    pElem.innerText = index+1;
+
+    const divElem = document.createElement('div');
+    divElem.classList.add('square');
+    divElem.appendChild(pElem);
     
-    elem.addEventListener('click', function () {
+    divElem.addEventListener('click', function () {
         console.log(index+1);
-        elem.classList.toggle('clicked');
+        divElem.classList.toggle('clicked');
         });
     
-    return elem;
+    return divElem;
 };
 
 
