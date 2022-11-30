@@ -35,7 +35,7 @@ function fillGrid(gridElem) {
 
 
 
-
+//When play bustton clicked 
 playBtn.addEventListener('click', function(){
     fillGrid(gridElem);
 });
